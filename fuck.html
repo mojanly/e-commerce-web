@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red{
+            background: red;
+        }
+
+        .blue{
+            background: blue;
+        }
+        .green{
+            background:green;
+        }
+        .mix{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            display: none;
+        }
+        .small{
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li class="filter" data-filter="all">All</li>
+        <li class="filter" data-filter=".redcolor">red</li>
+        <li class="filter" data-filter=".bluecolor">blue</li>
+        <li class="filter" data-filter=".greencolor">green</li>
+    </ul>
+
+    <div class="rowx">
+        <div class="mix red redcolor"></div>
+        <div class="mix blue bluecolor"></div>
+        <div class="mix green greencolor"></div>
+        <div class="mix blue bluecolor"></div>
+        <div class="mix green greencolor"></div>
+        <div class="mix red redcolor"></div>
+        <div class="mix red redcolor"></div>
+    </div>
+    
+    <script src="jquery.2.min.js"></script>
+    <script src="jquery.mixitup.min.js"></script>
+    <script>
+        $('.rowx').mixItUp();
+    </script>
+
+</body>
+</html>
