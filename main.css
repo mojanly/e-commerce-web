@@ -3,10 +3,10 @@
 }
 
 body{
-    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+    font-family: 'Source Sans Pro', Light;
     font-size: 15px;
     font-weight: 400px;
-    margin:0px;
+    margin: 0px;
     padding: 0;
 }
 
@@ -124,31 +124,34 @@ p{
 }
 
 .col-4, .col-6{
-    float:left;/*圖排在同一排*/
-    padding:0 10px;
+    float:left;/*圖排在同一排*/ 
 }
 
 .col-4{
-    width: 33.33333%;
+    width: 32%;
+    margin: 0.66%;
 }
 
 .col-6{
-    width: 49.99999%;
-    
+    width: 48%;
+    margin: 1%;
 }
 
-.category{
-    position: relative;
+.cat{
+    position: relative;/*跟圖片中的文字做對齊(以此為基準)*/
     overflow: hidden;
 }
+
 
 .category img{
     width: 100%;
     height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
     cursor: pointer;  
-    transition: all 0.5s ease 0s;
+    -webkit-transition: 0.5s;
+}
+
+.category img:hover{
+    -webkit-transform: scale(1.3);
 }
 
 
