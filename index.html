@@ -12,16 +12,7 @@
 </head>
 <body>
 
-
-    <script src="jquery.2.min.js"></script>
-    <script src="jquery.mixitup.min.js"></script>
-    <script>
-        $('.rowx').mixItUp();
-    </script>
-
-
-
-    
+   
     <div id="header">
         <div class="container2">
      
@@ -57,19 +48,19 @@
         <div class="category">
             <div class="container">
                 <div class="rowx clearfix">
-                    <div class="col-6 category mix redColor"><img src="pic/cat1.jpg" alt="slider">
+                    <div class="col-6 category"><img src="pic/cat1.jpg" alt="slider">
                     <span class="title">outdoor lighting</span>
                     </div>
-                    <div class="col-6 category mix bluecolor"><img src="pic/cat2.jpg" alt="slider">
+                    <div class="col-6 category"><img src="pic/cat2.jpg" alt="slider">
                     <span class="title">wooden flooring</span>
                     </div>
-                    <div class="col-4 category mix greencolor"><img src="pic/cat3.jpg" alt="slider">
+                    <div class="col-4 category"><img src="pic/cat3.jpg" alt="slider">
                     <span class="title">living area</span>
                     </div>
-                    <div class="col-4 category mix greencolor"><img src="pic/cat4.jpg" alt="slider">
+                    <div class="col-4 category"><img src="pic/cat4.jpg" alt="slider">
                     <span class="title">bathroom fitings
                     </div>
-                    <div class="col-4 category mix bluecolor"><img src="pic/cat5.jpg" alt="slider">
+                    <div class="col-4 category"><img src="pic/cat5.jpg" alt="slider">
                     <span class="title">tools equipment</span>
                     </div>
                 </div>
@@ -82,7 +73,7 @@
         <div class="resent product">
             <div class="container">
                 <div class="intro clearfix">
-                    <h2>resent product</h2>
+                    <h2>RECENT PRODUCT</h2>
                         <hr />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
@@ -264,23 +255,37 @@
 
     <a herf="#" id="gotop">top</a>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-        <!-- nav -->
-        <script>
-                $(document).ready(function() {
-                  $(window).scroll(function() {
-                  if($(document).scrollTop() > 10) {
-                    $('#nav').addClass('change');
-                    $('#nav ul').addClass('lichange');
-                    $('#logo img').addClass('logochange');
-                }
-                else {
-                $('#nav').removeClass('change');
-                $('#nav ul').removeClass('lichange');
-                $('#logo img').removeClass('logochange');
-                     }
+        <!-- nav特效 -->
+        <script type="text/javascript">
+
+            // Menu-toggle button
+      
+            $(document).ready(function() {
+                  $(".menu-icon").on("click", function() {
+                        $("#nav ul").toggleClass("showing");
                   });
-                });
+            });
+      
+            // Scrolling Effect
+      
+            $(window).on("scroll", function() {
+                  if($(window).scrollTop()) {
+                        $('#nav').addClass('change');
+                        $('#nav ul').addClass('change');
+                        $('#logo img').addClass('change');
+                  }
+      
+                  else {
+                        $('#nav').removeClass('change');
+                        $('#nav ul').removeClass('change');
+                        $('#logo img').removeClass('change');
+                  }
+            })
+      
+      
         </script>
+
 </body>
 </html>
